@@ -12,5 +12,5 @@ included
 * index.html has javascript code which uses graphql subscription
 
 TODO
-* introduce propert spring-boot-graphql test support
+* introduce proper spring-boot-graphql test support
 * integration test of websocket / graphql subscription
