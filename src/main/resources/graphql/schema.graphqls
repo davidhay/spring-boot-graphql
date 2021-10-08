@@ -1,0 +1,25 @@
+type Query {
+    customers : [Customer]
+    customersByName(name:String):[Customer]
+}
+type Customer {
+    id: ID,
+    name: String
+}
+
+type Mutation {
+    addCustomer(name:String):Customer
+}
+
+type Subscription {
+    customerEvents(customerId:ID): CustomerEvent
+}
+
+type CustomerEvent {
+    customer: Customer,
+    eventType: CustomerEventType
+}
+
+enum CustomerEventType {
+    UPDATED, DELETED
+}
